@@ -1,0 +1,11 @@
+def wznowienia():
+    print("wstrzymuje dzialanie")
+    yield 1
+    print("wznawiam dzialanie")
+
+    print("wstrzymuje dzialanie")
+    yield 2
+    print("wznawiam dzialanie")
+
+for i in wznowienia():
+    print("Zwrocono wartosc: " + str(i))
