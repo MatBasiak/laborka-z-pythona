@@ -1,0 +1,10 @@
+def repeat(obj,*args):
+    if args:
+        for i in range(0,args[0]):
+            yield obj
+    else:
+        while True:
+            yield obj
+
+for object in repeat(10,22):
+    print(object)
